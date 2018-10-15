@@ -1,6 +1,5 @@
 FROM node:9.11.2
-RUN apt-get update \
-&& apt-get install -y nginx
+RUN apt-get install -y nginx
 WORKDIR /app
 COPY . /app/
 EXPOSE 80
