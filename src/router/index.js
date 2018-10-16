@@ -22,7 +22,7 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
+      path: '/home',
       component: Index,
       name: 'index',
       redirect: '/home',
@@ -32,7 +32,7 @@ export default new Router({
         {path: 'goodsDetails', name: 'goodsDetails', component: goodsDetails}
       ]
     },
-    {path: '/login', name: 'login', component: Login},
+    {path: '/', name: 'login', component: Login},
     {path: '/cart', name: 'cart', component: Cart},
     {
       path: '/order',

@@ -1,5 +1,5 @@
 import http from './public'
-const baseUrl = '/api'
+const baseUrl = 'http://118.24.150.65:8083/api'
 // 电脑列表
 export const getComputer = (params) => {
   return http.fetchGet(`${baseUrl}/goods/computer`, params)

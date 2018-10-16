@@ -12,10 +12,13 @@ export default {
     })
   },
   fetchPost (url, params = {}) {
+    console.log(params)
     return new Promise((resolve, reject) => {
       axios.post(url, params).then(res => {
+        console.log(res)
         resolve(res.data)
       }).catch(error => {
+        console.log(error)
         reject(error)
       })
     })
